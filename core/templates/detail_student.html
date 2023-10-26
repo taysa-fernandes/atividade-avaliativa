@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Aluno</title>
+</head>
+<body>
+    <h1>Detalhes do Aluno</h1>
+    <p><strong>Nome:</strong> {{ student.name }}</p>
+    <p><strong>Email:</strong> {{ student.email }}</p>
+    <p><strong>Endereço:</strong> {{ student.address }}</p>
+    <p><strong>Data de Nascimento:</strong> {{ student.date_of_birth }}</p>
+    <!-- Adicione mais informações conforme necessário -->
+    <a href="{% url 'student' %}">Voltar para a lista de alunos</a>
+</body>
+</html>
