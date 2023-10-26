@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.urls import reverse_lazy
-from django.views.generic import TemplateView,  UpdateView, CreateView, DeleteView
+from django.views.generic import TemplateView,  UpdateView, CreateView, DeleteView,DetailView
 from .models import *
 from .forms import *
 
@@ -40,7 +40,7 @@ class DeleteStudentView(DeleteView):
     success_url = reverse_lazy('student') 
 
     def get_object(self, queryset=None):
-        return Student.objects.get(pk=self.kwargs['pk'])
+        return aluno.objects.get(pk=self.kwargs['pk'])
 
 class StudentDetailView(DetailView):
     model = aluno
