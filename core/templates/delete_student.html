@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Confirmar Exclusão</h1>
-    <p>Você tem certeza de que deseja excluir o aluno "{{ object.name }}"?</p>
+    <p>Você tem certeza de que deseja excluir o aluno "{{ object.nome }}"?</p>
     <form method="post">
         {% csrf_token %}
         <button type="submit">Confirmar Exclusão</button>
